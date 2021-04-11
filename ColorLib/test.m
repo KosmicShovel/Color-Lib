@@ -10,10 +10,11 @@
 
 
 int main(int argc, char * argv[]) {
-    float floats[3];
-    floats[0]=0.4f;
-    floats[1]=0.5f;
-    floats[2]=0.97f;
-    UColor* rgb = [[UColor alloc]initWithFloatRGB:floats];
-    NSLog(@"%@", [rgb toString]);
+    float max_steps = 100;
+    UColor *col1 = [[UColor alloc] initWithRGB_R:255 G:80 B:20];
+    UColor *col2 = [[UColor alloc] initWithHexRGB:0x0000ff];
+    for (float i = 0; i<max_steps; i++) {
+        float perc = i/max_steps;
+        NSLog(@"%@", [[col1 lerp:col2 withPercent:perc] toString]);
+    }
 }
