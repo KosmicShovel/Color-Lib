@@ -52,6 +52,17 @@
     return self;
 }
 
+- (instancetype)initWithFloatRGBA_R:(float)r G:(float)g B:(float)b A:(float)a {
+    self = [super init];
+    
+    red=r*255;
+    green=g*255;
+    blue=b*255;
+    alpha=a*255;
+    
+    return self;
+}
+
 - (instancetype)initWithRGB:(int*)rgb {
     self = [super init];
     
@@ -79,6 +90,17 @@
     red=rgb[0]*255;
     green=rgb[1]*255;
     blue=rgb[2]*255;
+    alpha=255;
+    
+    return self;
+}
+
+- (instancetype)initWithFloatRGB_R:(float)r G:(float)g B:(float)b {
+    self = [super init];
+    
+    red=r*255;
+    green=g*255;
+    blue=b*255;
     alpha=255;
     
     return self;

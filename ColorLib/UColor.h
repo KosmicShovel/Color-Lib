@@ -23,8 +23,10 @@
 - (instancetype)initWithRGB:(int*)rgb;
 - (instancetype)initWithHexRGB:(int)rgb;
 - (instancetype)initWithFloatRGB:(float*)rgb;
-- (instancetype)initWithRGB_R:(int)r G:(int)g B:(int)b;
 - (instancetype)initWithRGBA_R:(int)r G:(int)g B:(int)b A:(int)a;
+- (instancetype)initWithRGB_R:(int)r G:(int)g B:(int)b;
+- (instancetype)initWithFloatRGBA_R:(float)r G:(float)g B:(float)b A:(float)a;
+- (instancetype)initWithFloatRGB_R:(float)r G:(float)g B:(float)b;
 - (UColor*) lerp:(UColor*)mix withPercent:(float)percent;
 - (NSString*)toString;
 
