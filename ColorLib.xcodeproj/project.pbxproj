@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CEA38DC2622403B0061A4F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA38DB2622403B0061A4F3 /* main.m */; };
+		5CEA38E6262242FF0061A4F3 /* UColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA38E5262242FF0061A4F3 /* UColor.m */; };
+		5CEA38E9262253850061A4F3 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA38E8262253850061A4F3 /* test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		5CEA38D82622403B0061A4F3 /* ColorLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ColorLib; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CEA38DB2622403B0061A4F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CEA38E5262242FF0061A4F3 /* UColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UColor.m; sourceTree = "<group>"; };
+		5CEA38E8262253850061A4F3 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		5CEA38F1262269D50061A4F3 /* UColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UColor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		5CEA38DA2622403B0061A4F3 /* ColorLib */ = {
 			isa = PBXGroup;
 			children = (
-				5CEA38DB2622403B0061A4F3 /* main.m */,
+				5CEA38E5262242FF0061A4F3 /* UColor.m */,
+				5CEA38E8262253850061A4F3 /* test.m */,
+				5CEA38F1262269D50061A4F3 /* UColor.h */,
 			);
 			path = ColorLib;
 			sourceTree = "<group>";
@@ -118,7 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CEA38DC2622403B0061A4F3 /* main.m in Sources */,
+				5CEA38E6262242FF0061A4F3 /* UColor.m in Sources */,
+				5CEA38E9262253850061A4F3 /* test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +246,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
+				MACH_O_TYPE = mh_execute;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +259,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				MACH_O_TYPE = mh_execute;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
